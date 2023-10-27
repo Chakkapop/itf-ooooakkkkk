@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script>
+        function display(){
+            document.getElementById("myusername").innerHTML = document.getElementById("username").value + "'s Gallery";
+            // console.log(.value)
+        }
+        function setImage(){
+            document.getElementById("profileing").style.background = "url(" + document.getElementById("image_url").value + ")";
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div class="flex-top">
+            <div class="flex-item-1">
+                <!--avatar-->
+                <div class="avatar" id="profileing"></div>
+                <div class="noti"><b>2</b></div>
+                <div>
+                    <a href="https://www.instagram.com/ooooakkkk/" class="on-hovor">
+                    <p id = "myusername"User Name, Gallery>User Name, Gallery</p>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="flex-item-2">
+                <!-- input -->
+                <div style="margin-left: auto;margin-right: auto;"><label>Username</label><input type="text" style="margin-left: 5px;" id="username"><button style="margin-left: 5px;" onclick="display()">set</button></div>
+                <div style="margin-left: auto;margin-right: auto;"><label>Image URL</label><input  type="text" style="margin-left: 5px;" id="image_url"><button style="margin-left: 5px;" onclick="setImage()">set</button></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item" style="grid-column: span 2 / span 2;"><img src="download.png" height="300px" width="620px" alt=""></div>
+            <div class="gallery-item"><img src="download (7).png" height="300px" width="300px" alt=""></div>
+            <div class="gallery-item"><img src="download (6).png" height="300px" width="300px" alt=""></div>
+            <div class="gallery-item"><img src="download (5).png" height="300px" width="300px" alt=""></div>
+            <div class="gallery-item"><img src="download (5).png" height="300px" width="300px" alt=""></div>
+            <div class="gallery-item" style="grid-column: span 2 / span 2;"><img src="download (3).jpg" height="300px" width="620px" alt=""></div>
+            <div class="gallery-item"><img src="download (4).png" height="300px" width="300px" alt=""></div>
+            <div class="gallery-item"><img src="download (3).png" height="300px" width="300px" alt=""></div>
+            <div class="gallery-item"><img src="download (3).png" height="300px" width="300px" alt=""></div>
+            <div class="gallery-item"><img src="download (1).png" height="300px" width="300px" alt=""></div>
+            <div class="gallery-item"><img src="download (1).jpg" height="300px" width="300px" alt=""></div>
+            <div class="gallery-item"><img src="download (2).jpg" height="300px" width="300px" alt=""></div>
+        </div>
+    </div>
+
+</body>
+</html>
